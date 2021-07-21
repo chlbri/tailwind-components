@@ -16,7 +16,7 @@ export default class MyDocument extends Document {
       | ReactFragment;
   }> {
     const initialProps = await Document.getInitialProps(ctx);
-    return {...initialProps};
+    return { ...initialProps };
   }
 
   render(): JSX.Element {

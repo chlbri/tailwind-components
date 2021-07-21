@@ -9,7 +9,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "next-lint": "next lint",
+    "prettier": "prettier --write \"{src/**/*,App}.{ts,tsx}\"",
+    "eslint": "eslint \"{src/**/*,App}.{ts,tsx}\"",
+    "eslint-fix": "yarn run eslint --fix",
     "down": "kill $(sudo lsof -t -i:3000)"
   },
   "devDependencies": {
@@ -22,6 +25,7 @@
     "eslint-config-next": "^11.0.1",
     "jest-cucumber": "^3.0.1",
     "postcss": "^8.3.6",
+    "prettier": "^2.3.2",
     "tailwindcss": "^2.2.5",
     "typescript": "^4.3.5",
     "vercel": "^23.0.1"

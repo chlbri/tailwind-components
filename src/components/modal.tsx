@@ -1,7 +1,7 @@
 /** @format */
 
-import {ComponentProps, FC, useRef} from 'react';
-import isDivContainsMouse from '../hooks/isDivContainsMouse'
+import { ComponentProps, FC, useRef } from 'react';
+import isDivContainsMouse from '../hooks/isDivContainsMouse';
 
 type Props = {
   exit: () => void;
@@ -13,10 +13,10 @@ const Modal: FC<
     Omit<ComponentProps<'div'>, 'onClick'> & {
       bg: Omit<ComponentProps<'div'>, 'onClick'>;
     }
-> = ({exit, children, className, bg, ...props}) => {
+> = ({ exit, children, className, bg, ...props }) => {
   const ref = useRef<HTMLDivElement>(null);
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const {className: cl, ...bgProps} = bg;
+  const { className: cl, ...bgProps } = bg;
 
   return (
     <div
