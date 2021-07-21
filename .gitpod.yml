@@ -1,0 +1,35 @@
+# package.json repo à changer
+# Install Cucumber extension strongly recommended.....
+# Install Commit message editor.....
+
+tasks:
+  - name: install all dependencies
+    init: |
+      npm install -g ts-node
+      yarn add -D typescript @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-config-next
+      yarn add -D jest-cucumber vercel
+      yarn add -D @types/react @types/node postcss@latest tailwindcss@latest autoprefixer@latest
+      yarn add next react react-dom
+      yarn add nanoid
+      npx tailwindcss init -p
+    command: yarn run dev
+
+vscode:
+  extensions:
+    - ms-azuretools.vscode-docker
+    - ms-ceintl.vscode-language-pack-fr
+    - github.vscode-pull-request-github
+    - eamodio.gitlens
+    - graphql.vscode-graphql
+    - kavod-io.vscode-jest-test-adapter
+    - pkief.material-icon-theme
+    - esbenp.prettier-vscode
+    - yatki.vscode-surround
+    - bradlc.vscode-tailwindcss
+    - hbenl.vscode-test-explorer
+    - fabiospampinato.vscode-todo-plus
+    - dbaeumer.vscode-eslint
+    - tabnine.tabnine-vscode
+    - codezombiech.gitignore
+    - foxundermoon.shell-format
+    - redhat.vscode-xml

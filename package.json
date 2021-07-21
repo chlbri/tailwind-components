@@ -1,0 +1,15 @@
+{
+  "name": "gitpod-typescript",
+  "version": "0.0.0",
+  "description": "GitPod for Typescript",
+  "repository": "https://github.com/react-if/nexts",
+  "author": "chlbri <bri_lvi@icloud.com>",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "down": "kill $(sudo lsof -t -i:3000)",
+  }
+}
