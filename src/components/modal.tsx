@@ -5,7 +5,6 @@ import isDivContainsMouse from '../hooks/isDivContainsMouse';
 
 type Props = {
   exit: () => void;
-  data: any;
 };
 
 const Modal: FC<
