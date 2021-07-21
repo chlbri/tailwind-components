@@ -10,6 +10,6 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "down": "kill $(sudo lsof -t -i:3000)",
+    "down": "kill $(sudo lsof -t -i:3000)"
   }
 }
